@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+ @font-face{
+  font-family:  anzo1;
+  src: url(src/assets/file.woff2);
+ }
+ @font-face{
+  font-family: anzo2;
+  src: url(src/assets/file1.woff2);
+ }
+ @font-face{
+  font-family: anzo3;
+  src: url(src/assets/file2.woff2);
+ }
+::selection{
+  color: rgb(184, 175, 175);
+}
+
+
+ #page2{
+  position: relative;
+  perspective: 3000px;
+ }
+ .textrot{
+  transform-origin: 100% 80%;
+ }
+ .bouncbtn{
+   animation: anima 4s ease infinite;
+ }
+ .bldtext{
+  animation: colanimation 4s linear infinite;
+ }
+
+
+
+ @keyframes colanimation{
+  0%{
+    color: white;
+  }
+  20%{
+    color: gray;
+  }
+  40%{
+    color: black;
+  }
+  60%{
+    color: rgb(0, 0, 0);
+  }
+  80%{
+    color: gray;
+  }
+  100%{
+    color: white;
+  }
+ }
+ @keyframes anima{
+  0%{
+    scale: 1;
+  }
+  20%{
+    scale: 0.9;
+  }
+  40%{
+    scale: 1;
+  }
+  60%{
+    scale: 0.9;
+  }
+  80%{
+    scale: 1;
+  }
+  100%{
+    scale: 1;
+  }
+ }
+
+
+.spinmain{
+  white-space: nowrap;
+  position: relative;
+  z-index: -1;
+}
+.logospin{
+  animation: slide 20s infinite linear;
+}
+.spinmain::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to right , white 50%,rgba(255, 255, 255, 0.425));
+  box-shadow: 0px 1px 25px rgba(255, 255, 255, 0.886);
+}
+.spinmain::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-image: linear-gradient(to left , white 50%,rgba(255, 255, 255, 0.425));
+  box-shadow: 0px 1px 25px rgba(255, 255, 255, 0.886);
+}
+.react{
+  animation: spin 3s infinite linear;
+}
+@keyframes spin{
+  to{
+    transform: rotate(100%);
+  }
+}
+@keyframes slide{
+  from{
+    transform: traslateX(0%);
+  }
+  to{
+    transform: translateX(-52%);
+  }
+}
+
+
+.swiper-button-prev.swiper-button-disabled, 
+ .swiper-button-next.swiper-button-disabled{
+  --swiper-navigation-size: 28px;
+}
+.swiper-button-prev, .swiper-button-next{
+  --swiper-navigation-size: 35px;
+  --swiper-theme-color: rgb(74, 74, 74);
+}
+.swiper-pagination.swiper-pagination-bullets{
+  --swiper-pagination-color: rgb(0, 0, 0);
+  --swiper-pagination-bottom: -65px;
+}
+.swiper.swiper-coverflow{
+  overflow: visible;
+}
+
+
+@media screen and (max-width:550px){
+  .menu{
+    display: block;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}

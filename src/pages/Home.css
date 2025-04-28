@@ -1,0 +1,74 @@
+.image::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(212, 212, 212, 0.864);
+    transform: rotate(210deg);
+    border-radius: 35px;
+    transition: all 1.5s ease;
+}
+.image::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    background-color: rgba(159, 156, 156, 0.86);
+    transform: rotate(60deg); 
+    border-radius: 35px;
+    transition: all 1.5s ease;
+}
+.image{
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+    opacity: 0.1;
+}
+.image:hover{
+    opacity: 0.9;
+    transform: rotate(0deg);
+    z-index: 1;
+}
+.image:hover::after{
+    transform: rotate(360deg);
+    opacity: 0;
+}
+.image:hover::before{
+    transform: rotate(-360deg);
+    opacity: 0;
+}
+#presp{
+    perspective: 500px;
+    position: relative;
+}
+#titledev{
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 767px) {
+    .mainhome{
+        height: 1200px;
+    }
+    .home {
+      flex-wrap: wrap;
+    }
+    #presp{
+        height: 50%;
+    }
+    .imgsection{
+        height: 50%;
+        justify-content: center;
+        padding-bottom: 8vh;
+    }
+    #logo{
+      width: 20vw;
+      height: 10vh;
+    }
+    .image{
+        width: 230px;
+        height: 230px;
+    }
+  }
