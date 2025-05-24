@@ -29,7 +29,7 @@ const Sesion = () => {
   return (
     <div onMouseMove={(e)=>{
       mousemoving(e)} 
-    }
+    } id='Home'
     className='mainhome h-screen p-4! max-[540px]:p-3!'>
         <div className='home w-full relative h-full flex items-center justify-between overflow-hidden shadow-xl  shadow-gray-400 rounded-2xl bg-linear-to-r from-zinc-900 from-30% to-zinc-400 to-95% '>
           <div id='presp' className=' text-white relative flex justify-between flex-col pl-8! max-[767px]:pl-4!  py-10! max-[767px]:py-5! h-[100%] w-[800px]'> 
@@ -41,8 +41,8 @@ const Sesion = () => {
             </div>
           </div>
           <div className='imgsection h-full flex items-center w-[550px] '> 
-            <div className='image h-[350px] w-[350px] relative ' >
-            <img className='h-[350px] w-[350px] rounded-full'  src="/my.jpg" alt="" />
+            <div className='image h-[350px] w-[350px] z-50 relative grayscale hover:grayscale-0 transition duration-300 hover:scale-105' >
+            <img className='mimg h-[350px] w-[350px] rounded-[45px] '  src="/m.jpg" alt="" />
             </div>
           </div>
         </div>

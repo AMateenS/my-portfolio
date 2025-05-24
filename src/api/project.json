@@ -1,0 +1,30 @@
+[
+  {
+    
+    "img_url": "/pro(1).png",
+    "img_des": "A dynamic web application that showcases a software companys services, portfolio, and client testimonials. Includes sections for team introduction, contact form, and project inquiry. Built using modern front-end technologies and responsive design principles.",
+    "img_link": "https://amateens.github.io/Software-house"
+    
+  },
+  {
+    
+    "img_url": "/pro(2).png",
+    "img_des": "A web-based music player that allows users to play, pause, and skip audio tracks. Features playlist management, volume control, and real-time track progress display. Utilizes HTML5 audio API with a user-friendly interface.",
+    "img_link": "https://amateens.github.io/Music-player"
+    
+  },
+  {
+    
+    "img_url": "/pro(3).png",
+    "img_des": "An interactive web calculator for performing basic arithmetic operations like addition, subtraction, multiplication, and division. Designed with responsive layout and real-time result display. Uses JavaScript for functional logic and instant computation.",
+    "img_link": "https://amateens.github.io/Calculator"
+    
+  },
+  {
+    
+    "img_url": "/pro(4).png",
+    "img_des": "A responsive web gallery that displays images in grid and slideshow formats. Supports image preview, filtering, and lightbox effects for enhanced viewing. Built using HTML, CSS, and JavaScript with smooth animations.",
+    "img_link": "https://amateens.github.io/Image-Gallery"
+    
+  }
+]

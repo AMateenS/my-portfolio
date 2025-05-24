@@ -36,17 +36,17 @@ const Page2 = () => {
         <div id='page2' ref={refec} className='p-6! overflow-clip mt-[4rem]!'>
             <div className='textrot'>
                 <h1 className='text-[30vw] text-center font-[anzo1] uppercase leading-[26vw]'>
-                    Effective web
+                Effective web
                 </h1>
             </div>
             <div className='textrot'>
                 <h1 className='text-[30vw] text-center font-[anzo1] uppercase leading-[26vw]'>
-                    is one
+                  delivers
                 </h1>
             </div>
             <div className='textrot'>
                 <h1 className='text-[30vw] text-center font-[anzo1] uppercase leading-[26vw]'>
-                    that delivers
+                    real value
                 </h1>
             </div>
         </div>

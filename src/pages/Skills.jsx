@@ -8,7 +8,7 @@ import { FaHtml5 } from "react-icons/fa6";
 const Skills = () => {
   return (
     <>
-    <div className='spinmain overflow-hidden my-[6vw]! '>
+    <div id='Skills' className='spinmain overflow-hidden  my-[8vw]! '>
      <div className='logospin w-fit h-[100px] gap-[8vw] flex items-center'>
         <div className='h-full flex items-center font-bold font-[anzo3]'>
             <FaHtml5 className='w-[45px] h-[45px] mr-2!'/>

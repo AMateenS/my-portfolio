@@ -8,8 +8,12 @@ import Skills from './pages/Skills.jsx';
 import Project from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
 
+
+
+
 function App() {
   return (
+    
     <>
     <Header/>
       <Home/>

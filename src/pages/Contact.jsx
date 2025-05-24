@@ -1,5 +1,7 @@
 import React, { useState , useRef} from 'react'
 import emailjs from '@emailjs/browser';
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 
 const Contact = () => {
 
@@ -37,31 +39,32 @@ const Contact = () => {
 
   return (
     <>
-        <div className='h-screen mt-[5vw]! p-4! max-[540px]:p-3!'>
-          <div className='w-full relative h-full flex items-center  max-[767px]:flex-wrap justify-around overflow-hidden shadow-xl  shadow-gray-400 rounded-2xl bg-linear-to-r from-zinc-900 from-30% to-zinc-400 to-95% '>
-              <video autoPlay controls={false} loop className='h-full w-full object-cover' src="/star.mp4"></video>
-              <video autoPlay controls={false} loop className='h-full w-full absolute object-contain' src="/omon.mp4"></video>
-              <h1 className='absolute left-[4vw] max-[767px]:top-[8vh] max-[767px]:text-8xl   text-white uppercase font-[anzo1] text-9xl'>Reach out to me</h1>
+        <div id='Contact' className='h-screen mt-[5vw]! p-4! max-[540px]:p-3!'>
+          <div className='w-full relative h-full flex  overflow-hidden shadow-xl  shadow-gray-400 rounded-2xl bg-linear-to-r from-zinc-900 from-30% to-zinc-400 to-95% '>
+              <video autoPlay muted controls={false} loop className='h-full w-full object-cover' src="/star.mp4"></video>
+              <video autoPlay muted controls={false} loop className='h-full w-full max-[767px]:opacity-70 absolute object-contain' src="/omon.mp4"></video>
+              <div className='w-full absolute h-full flex items-center  max-[767px]:flex-wrap justify-between px-[5vw]!'>
+              <h1 className='max-[767px]:top-[3vh] max-[767px]:text-8xl   text-white uppercase font-[anzo1] text-9xl'>Reach out to me</h1>
              <form  ref={form}
              onSubmit={(e)=>{
                 submithandler(e);
              }}
-              className='absolute right-[5vw] max-[767px]:bottom-[8vh] bg-gray-400/40 p-[2vw]! rounded-2xl text-2xl text-white'>
-                <h4 className='text-4xl tracking-wide font-[anzo1] mt-3! uppercase'>How should I call you?</h4>
+              className='max-[767px]:bottom-[4vh] bg-gray-400/40 p-[2vw]! rounded-2xl text-2xl text-white'>
+                <h4 className='text-4xl max-[767px]:text-3xl tracking-wide font-[anzo1] mt-3! max-[767px]:mt-1! uppercase'>How should I call you?</h4>
                 <input 
                 name='Name' required 
                 className='border-2 border-white rounded-xl p-1! text-xl font-[anzo3] mt-3!' 
                 type="text" placeholder='FullName'
                 value={contact.Name} 
                 onChange={inputval }/>
-                <h4 className='text-4xl tracking-wide font-[anzo1] mt-3! uppercase'>Sending From</h4>
+                <h4 className='text-4xl max-[767px]:text-3xl tracking-wide font-[anzo1] mt-3! max-[767px]:mt-1! uppercase'>Sending From</h4>
                 <input 
                 name='Email' required
                  className='border-2 border-white rounded-xl p-1! text-xl font-[anzo3] mt-3!' 
                  type="email" placeholder='name@gmail.com' 
                  value={contact.Email}
                  onChange={inputval  }/>
-                <h4 className='text-4xl tracking-wide font-[anzo1] mt-3! uppercase'>Transmitted Data</h4>
+                <h4 className='text-4xl max-[767px]:text-3xl tracking-wide font-[anzo1] mt-3! max-[767px]:mt-1! uppercase'>Transmitted Data</h4>
                 <textarea 
                 rows={4} name='Message' required 
                 className='border-2 border-white rounded-xl p-1! text-xl font-[anzo3] mt-3!' 
@@ -71,9 +74,14 @@ const Contact = () => {
                 
                 
                 <div className='flex items-center justify-center mt-5!'>
-                <button type='submit' className='text-xl font-[anzo2] border-2 border-white active:scale-90 cursor-pointer bg-black py-2! px-4! rounded-2xl'>Send Message</button>
+                <button type='submit' className='text-xl font-[anzo2] border-2 border-white active:scale-90 cursor-pointer bg-black py-2! px-4! rounded-2xl hover:bg-white hover:text-black transition duration-700'>Send Message</button>
                 </div>
               </form>
+              </div>
+              <div className='absolute bottom-[60px] gap-3 left-12 flex '>
+              <a className='linkicon relative' href="https://www.linkedin.com/in/abdul-mateen-046143273"><FaLinkedin className='text-white rounded-3xl cursor-pointer w-[40px] h-[40px]' /></a>
+              <a className='giticon relative' href="https://github.com/AMateenS"><FaGithubSquare className='text-white rounded-3xl cursor-pointer w-[40px] h-[40px]' /></a>
+            </div>
             </div>
         </div>
     </>
