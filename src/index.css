@@ -14,15 +14,15 @@ body,html{
 }
  @font-face{
   font-family:  anzo1;
-  src: url(src/assets/file.woff2);
+  src: url(/file.woff2);
  }
  @font-face{
   font-family: anzo2;
-  src: url(src/assets/file1.woff2);
+  src: url(/file1.woff2);
  }
  @font-face{
   font-family: anzo3;
-  src: url(src/assets/file2.woff2);
+  src: url(/file2.woff2);
  }
 ::selection{
   color: rgb(184, 175, 175);
