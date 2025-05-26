@@ -71,11 +71,19 @@
       height: 10vh;
     }
     .image{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     .mimg{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
+    .image:hover::after{
+    left: 15px;
+    bottom: -15px;
+}
+.image:hover::before{
+    left: 30px;
+    bottom: -30px;
+}
   }

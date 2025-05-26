@@ -57,7 +57,9 @@ body,html{
  .bldtext{
   animation: colanimation 4s linear infinite;
  }
-
+.name{
+  animation: colanimation 6s linear infinite;
+}
 
 
  @keyframes colanimation{
